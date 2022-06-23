@@ -8,29 +8,28 @@ const P = styled.p`
 `;
 
 export default function DropDown(props) {
-    const {todaysDate} = props;
-    console.log('DropDown: ', todaysDate);
-    /*
-    let formatDate = todaysDate.split('');
-    console.log(formatDate);
-    // 2022-06-22
+  const { TenDayPick } = props;
+    // getting the current date and spliting it
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
 
-    const year = formatDate.filter((element, index) => {
-        return index < 4;
-    });
-    
-    console.log('formatYear: ', year);
-    */
-
-    let dates = [];
+    // Formating the drop down dates and structuring it
+    let datesAccordion = [];
     function dropDownDates() {
+        let countDown = dd;
         for (let index = 1; index <= 10; index++) {
-            let valueDate = index > 9 ? `05-${index}-2022` : `05-0${index}-2022`;
-            dates.push(<DropdownItem key={index} value={valueDate} >
+            let valueDate = `${mm}/${countDown}/${yyyy}`;
+            --countDown;
+
+            datesAccordion.push(
+            <DropdownItem key={index} value={valueDate} onClick={(event) => TenDayPick(event)}>
                 {valueDate}
-            </DropdownItem>);
+            </DropdownItem>
+            );
         }
-        return dates;
+        return datesAccordion;
     }
 
     return (

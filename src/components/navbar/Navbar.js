@@ -20,8 +20,7 @@ const Divider = styled.div`
 `;
 
 export default function Navbar(props) {
-  const {todaysDate} = props;
-  console.log('Navbar: ', todaysDate);
+  const { TenDayPick } = props;
   return (
     <Header className='header-style' >
       <Nav pills className='nav' >
@@ -57,7 +56,7 @@ export default function Navbar(props) {
             Dates📅
           </DropdownToggle>
 
-          <DropDown todaysDate={todaysDate}/>
+          <DropDown TenDayPick={TenDayPick}/>
 
         </UncontrolledDropdown>
         {/*🔽Drop down button end🔽*/}

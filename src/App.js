@@ -1,10 +1,12 @@
-import React, { useState, useEffect, useRef } from 'react';
-import styled from 'styled-components';
-import Navbar from './components/navbar/Navbar';
 import PictureOfDay from './components/Picture_of_day/PictureOfDay';
+import React, { useState, useEffect, useRef } from 'react';
+import Navbar from './components/navbar/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import styled from 'styled-components';
+import TodayDate from './TodaysDate';
 import axios from 'axios';
 import './App.css';
+
 
 /*✍ Styles for App component ✍*/
 const Div = styled.div`
@@ -34,10 +36,13 @@ function App() {
   today = yyyy + '-' + mm + '-' + dd;
 
   // today => is assigned to a state, in order to cycle through and re-render a selected day
-  const [todaysDate, setTodaysDate] = useState(today);
+  const [todaysDate, setTodaysDate] = useState(TodayDate());
+  // user 10 day pick
+  //TenDayPick(setTodaysDate);
 
   const urlTodaysPic = `https://api.nasa.gov/planetary/apod?date=${todaysDate}&api_key=AgviLJFwUuAOU5MIUkxa0OCdj6bpCnRWwDOA4WsO`;
 
+  //-----------Promise -----------
   // axios call to the APOD API, to get data
   useEffect(() => {
     axios.get(urlTodaysPic)
@@ -52,15 +57,50 @@ function App() {
       imgWidth.current = document.getElementById('img-of-day').clientWidth;
     }
   })
-  /*
-  if (obj.data === null)
-          console.log('this is null')
-        else
-          console.log(document.getElementById('img-of-day').clientWidth)
-  */
-  console.log(imgWidth.current);
-  console.log(!apod.title);
-  console.log('todayDate: ', todaysDate);
+  
+  //-----------F(TenDayPick)-----------
+  function TenDayPick(event) {
+    let newDateArray = event.target.innerText.split('');
+    
+    let arrayReturn = []
+    for (let index = 0; index < newDateArray.length; index++) {
+      switch (index) {
+        case 0:
+          arrayReturn.push(newDateArray[6]);
+          break;
+        case 1:
+          arrayReturn.push(newDateArray[7]);
+          break;
+        case 2:
+          arrayReturn.push(newDateArray[8]);
+          break;
+        case 3:
+          arrayReturn.push(newDateArray[9]);
+          break;
+        case 5:
+          arrayReturn.push(newDateArray[0]);
+          break;
+        case 6:
+          arrayReturn.push(newDateArray[1]);
+          break;
+        case 8:
+          arrayReturn.push(newDateArray[3]);
+          break;
+        case 9:
+          arrayReturn.push(newDateArray[4]);
+          break;
+        default:
+          arrayReturn.push('-');
+          break;
+      }
+    }
+
+    setTodaysDate(arrayReturn.join(''));
+    console.log('innerTarget: ', arrayReturn.join(''));
+
+    //setTodaysDate(newDate);
+  }
+
 
   if (!apod.title) {
     return (
@@ -72,8 +112,7 @@ function App() {
     return (
       <Div className="App">
 
-        <Navbar todaysDate={todaysDate}/>
-
+        <Navbar TenDayPick={TenDayPick}/>
         <Section className='layoutstyles__content'>
           <PictureOfDay apodData={apod} imgSize={imgWidth.current}/>
         </Section>
