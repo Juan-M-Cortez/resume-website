@@ -1,0 +1,17 @@
+#img-of-day {
+    align-self: center;
+    width: 700px;
+    height: auto;
+    border: 7px double;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    height: auto;
+    align-self: center;
+    text-align: left;
+}

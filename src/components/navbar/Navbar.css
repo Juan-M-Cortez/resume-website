@@ -1,0 +1,39 @@
+.nav {
+    background-color: currentColor;
+    /*
+    margin: 32px auto;
+    max-width: 1116px;
+    */
+}
+img {
+    height: 3.4rem;
+    width:auto;
+}
+.nav-item {
+    align-self: center;
+}
+.nav-item {
+}
+.card {
+    width: 1049.420px;
+}
+
+/*--------Responsive screen--------*/
+@media only screen and (max-width: 1024px) {
+    .nav-item:nth-child(odd) {
+        display: none;
+    }
+    .nav-item:nth-child(even) {
+        display: none;
+    }
+    .nav-item:nth-child(6) {
+        display: contents;
+        justify-self: left;
+    }
+    .nav {
+        justify-content: center;
+    }
+    .nav-item:nth-child(1) {
+        display: contents;
+    }
+}
