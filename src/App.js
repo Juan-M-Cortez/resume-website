@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
 import TodayDate from './TodaysDate';
+
 import axios from 'axios';
 import './App.css';
 
@@ -25,16 +26,6 @@ function App() {
   // holds current img width
   const imgWidth = useRef(0);
 
-  // Getting current date Format:
-  // 1. recieve date
-  // 2. convert date to format that is desirable => yyyy-mm-dd
-  // saving to: ==> today
-  var today = new Date();
-  var dd = String(today.getDate()).padStart(2, '0');
-  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-  var yyyy = today.getFullYear();
-  today = yyyy + '-' + mm + '-' + dd;
-
   // today => is assigned to a state, in order to cycle through and re-render a selected day
   const [todaysDate, setTodaysDate] = useState(TodayDate());
   // user 10 day pick
@@ -49,7 +40,7 @@ function App() {
       .then(obj => {
         setApod(obj.data)
       })
-  }, [])
+  }, [urlTodaysPic])
 
   // get current img size from the Dom
   useEffect(() => {
@@ -101,7 +92,7 @@ function App() {
     //setTodaysDate(newDate);
   }
 
-
+  console.log(urlTodaysPic)
   if (!apod.title) {
     return (
       <Div className="App">
@@ -114,8 +105,9 @@ function App() {
 
         <Navbar TenDayPick={TenDayPick}/>
         <Section className='layoutstyles__content'>
-          <PictureOfDay apodData={apod} imgSize={imgWidth.current}/>
+          <PictureOfDay apodData={apod} imgSize={imgWidth.current} urlTodaysPic={urlTodaysPic}/>
         </Section>
+        
 
       </Div>
     );

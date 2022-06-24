@@ -5,10 +5,17 @@
     max-width: 1116px;
     */
 }
+/*------Effects all images in the application(only good for stand alone pic of apod url)------
 img {
     height: 3.4rem;
     width:auto;
 }
+*/
+#nasa-icon {
+    height: 3.4rem;
+    width: auto;
+}
+
 .nav-item {
     align-self: center;
 }

@@ -6,6 +6,7 @@ import {
 import styled from 'styled-components';
 import './Navbar.css'
 import DropDown from '../drop_down/DropDown';
+import { Link } from 'react-router-dom'
 
 const Header = styled.header`
   display: flex;
@@ -16,7 +17,7 @@ const Header = styled.header`
 `;
 
 const Divider = styled.div`
-  width: 35rem;
+  width: 21rem;
 `;
 
 export default function Navbar(props) {
@@ -26,24 +27,26 @@ export default function Navbar(props) {
       <Nav pills className='nav' >
 
         <NavItem>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg' alt='nasa icon' />
+          <img src='https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg' alt='nasa icon' id='nasa-icon' />
         </NavItem>
-
+        
         <NavItem >
           <NavLink active href="#">
-            Home
+          🪐Pic Of the Day
           </NavLink>
         </NavItem>
 
+        
         <NavItem>
           <NavLink href="#">
-            Another Link
+          🌠Near Earth Objects
           </NavLink>
         </NavItem>
+        
 
         <NavItem>
           <NavLink disabled href="#">
-            Disabled Link
+          🚧Coming Soon: Techport
           </NavLink>
         </NavItem>
 
@@ -53,7 +56,7 @@ export default function Navbar(props) {
         <UncontrolledDropdown inNavbar nav>
 
           <DropdownToggle caret nav >
-            Dates📅
+          📅Dates
           </DropdownToggle>
 
           <DropDown TenDayPick={TenDayPick}/>
