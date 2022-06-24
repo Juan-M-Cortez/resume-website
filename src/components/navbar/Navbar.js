@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import {
   Nav, NavItem, NavLink, UncontrolledDropdown,
   DropdownToggle, DropdownMenu, DropdownItem
@@ -6,7 +6,7 @@ import {
 import styled from 'styled-components';
 import './Navbar.css'
 import DropDown from '../drop_down/DropDown';
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Header = styled.header`
   display: flex;
@@ -22,31 +22,50 @@ const Divider = styled.div`
 
 export default function Navbar(props) {
   const { TenDayPick } = props;
+  let picOfDay = useRef(true);
+  let nearEO = useRef(false);
+  // allows us to navigate react router
+  let navigate = useNavigate();
+
+
+
+  function activateHome() {
+    picOfDay.current = true;
+    nearEO.current = false;
+    console.log('activateHome');
+  }
+
+  function activateNEO() {
+    picOfDay.current = false;
+    nearEO.current = true;
+    console.log('activateNEO');
+  }
+
   return (
     <Header className='header-style' >
-      <Nav pills className='nav' >
 
+      <Nav pills className='nav' >
         <NavItem>
           <img src='https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg' alt='nasa icon' id='nasa-icon' />
         </NavItem>
-        
+
         <NavItem >
-          <NavLink active href="#">
-          🪐Pic Of the Day
+            <NavLink active={picOfDay.current} onClick={() => { navigate("/"); activateHome() }}>
+              🪐Pic Of the Day
+            </NavLink>
+        </NavItem>
+
+
+        <NavItem>
+          <NavLink active={nearEO.current} onClick={() => { navigate("/near_earth_objects"); activateNEO() }}>
+            🌠Near Earth Objects
           </NavLink>
         </NavItem>
 
-        
-        <NavItem>
-          <NavLink href="#">
-          🌠Near Earth Objects
-          </NavLink>
-        </NavItem>
-        
 
         <NavItem>
           <NavLink disabled href="#">
-          🚧Coming Soon: Techport
+            🚧Coming Soon: Techport
           </NavLink>
         </NavItem>
 
@@ -56,15 +75,15 @@ export default function Navbar(props) {
         <UncontrolledDropdown inNavbar nav>
 
           <DropdownToggle caret nav >
-          📅Dates
+            📅Dates
           </DropdownToggle>
 
-          <DropDown TenDayPick={TenDayPick}/>
+          <DropDown TenDayPick={TenDayPick} />
 
         </UncontrolledDropdown>
         {/*🔽Drop down button end🔽*/}
-
       </Nav>
+
     </Header>
   )
 }

@@ -4,9 +4,10 @@ import Navbar from './components/navbar/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
 import TodayDate from './TodaysDate';
-
 import axios from 'axios';
 import './App.css';
+
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 
 
 /*✍ Styles for App component ✍*/
@@ -48,11 +49,11 @@ function App() {
       imgWidth.current = document.getElementById('img-of-day').clientWidth;
     }
   })
-  
+
   //-----------F(TenDayPick)-----------
   function TenDayPick(event) {
     let newDateArray = event.target.innerText.split('');
-    
+
     let arrayReturn = []
     for (let index = 0; index < newDateArray.length; index++) {
       switch (index) {
@@ -102,12 +103,28 @@ function App() {
   } else {
     return (
       <Div className="App">
+      
+        <Navbar TenDayPick={TenDayPick} />
 
-        <Navbar TenDayPick={TenDayPick}/>
-        <Section className='layoutstyles__content'>
-          <PictureOfDay apodData={apod} imgSize={imgWidth.current} urlTodaysPic={urlTodaysPic}/>
-        </Section>
-        
+        <Routes>
+          <Route path="/"
+            element={
+              <Section className='layoutstyles__content'>
+                <PictureOfDay apodData={apod} imgSize={imgWidth.current} urlTodaysPic={urlTodaysPic} />
+              </Section>
+            }
+          />
+          <Route path="/near_earth_objects"
+            element={
+              <Link to="/invoices">Invoices</Link>
+            }
+          />
+        </Routes>
+
+        <nav>
+          <Link to="/">Home</Link> <div></div>
+          <Link to="/near_earth_objects"> Near eart objects</Link>
+        </nav>
 
       </Div>
     );
@@ -115,3 +132,18 @@ function App() {
 }
 
 export default App;
+
+/*
+    <Routes>
+      <Route path='/' element={<App />} />
+      <Route path='expenses' element={<Expenses />} />
+      <Route path='invoices' element={<Invoices />} />
+    </Routes>
+
+
+    <Section className='layoutstyles__content'>
+                <PictureOfDay apodData={apod} imgSize={imgWidth.current} urlTodaysPic={urlTodaysPic} />
+              </Section>
+              <Link to="/invoices">Invoices</Link> |{" "}
+              <Link to="/expenses">Expenses</Link>
+*/

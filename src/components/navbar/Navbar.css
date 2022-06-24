@@ -14,13 +14,14 @@ img {
 #nasa-icon {
     height: 3.4rem;
     width: auto;
+    cursor: default;
 }
 
 .nav-item {
     align-self: center;
+    cursor: pointer;
 }
-.nav-item {
-}
+
 .card {
     width: 1049.420px;
 }
