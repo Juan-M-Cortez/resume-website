@@ -26,7 +26,7 @@ img {
 }
 
 /*--------Responsive screen--------*/
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1083px) {
     .nav-item:nth-child(odd) {
         display: none;
     }
@@ -39,8 +39,18 @@ img {
     }
     .nav {
         justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap !important;
     }
     .nav-item:nth-child(1) {
+        justify-self: center;
         display: contents;
     }
+
+    @media only screen and (max-width: 524px) {
+    .nav {
+        flex-wrap: inherit !important;
+        width: 400px;
+    }
+}
 }
