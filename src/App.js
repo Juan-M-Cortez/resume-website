@@ -4,6 +4,8 @@ import Navbar from './components/navbar/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
 import TodayDate from './TodaysDate';
+import Footer from './components/footer/Footer';
+import NearEarthObjects from './components/near_earth_objects/NearEarthObjects';
 import axios from 'axios';
 import './App.css';
 
@@ -19,6 +21,10 @@ const Section = styled.section`
   display: flex;
   justify-content: center;
 `;
+const SampleDiv = styled.div`
+  height: 300px;
+`;
+
 
 
 function App() {
@@ -103,10 +109,11 @@ function App() {
   } else {
     return (
       <Div className="App">
-      
+
         <Navbar TenDayPick={TenDayPick} />
 
         <Routes>
+
           <Route path="/"
             element={
               <Section className='layoutstyles__content'>
@@ -114,17 +121,17 @@ function App() {
               </Section>
             }
           />
+
           <Route path="/near_earth_objects"
             element={
-              <Link to="/invoices">Invoices</Link>
+              <NearEarthObjects />
             }
           />
+
         </Routes>
 
-        <nav>
-          <Link to="/">Home</Link> <div></div>
-          <Link to="/near_earth_objects"> Near eart objects</Link>
-        </nav>
+        <SampleDiv />
+        <Footer />
 
       </Div>
     );

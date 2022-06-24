@@ -43,7 +43,7 @@ export default function Navbar(props) {
 
   return (
     <Header className='header-style' >
-
+      
       <Nav pills className='nav' >
         <NavItem>
           <img src='https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg' alt='nasa icon' id='nasa-icon' />
