@@ -4,12 +4,14 @@ import React from 'react'
 const DeleteDiv = styled.div`
     height: 500px;
 `;
+const DivNEO = styled.div`
+    display: flex;
+`;
 
 export default function NearEarthObjects() {
   return (
-    <div>
-        NearEarthObjects
+    <DivNEO>
         <DeleteDiv />
-    </div>
+    </DivNEO>
   )
 }
