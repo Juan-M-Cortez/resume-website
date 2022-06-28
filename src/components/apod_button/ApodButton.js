@@ -27,7 +27,7 @@ export default function ApodButton(props) {
     
     return (
        
-        <UncontrolledDropdown inNavbar nav style={{top: 87}}>
+        <UncontrolledDropdown inNavbar nav >
          {/*🔽Drop down button start🔽*/}
 
 

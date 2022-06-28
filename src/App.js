@@ -28,7 +28,7 @@ const SampleDiv = styled.div`
 `;
 const PODDiv = styled.div`
   width: 18%;
-  background-color: antiquewhite;
+  background-color: white;
 `;
 
 
@@ -128,6 +128,7 @@ function App() {
                 <PictureOfDay apodData={apod} imgSize={imgWidth.current} urlTodaysPic={urlTodaysPic} />
                 <PODDiv>
                  <ApodButton TenDayPick={TenDayPick} ButtonHeight={ApodDropdownHeight.current}/>
+                 <h4>Top Rated</h4>
                  <ApodCardGroup />
                 </PODDiv>
               </Section>

@@ -17,7 +17,7 @@ const Header = styled.header`
 `;
 
 const Divider = styled.div`
-  width: 21rem;
+    width: 42rem;
 `;
 
 export default function Navbar(props) {

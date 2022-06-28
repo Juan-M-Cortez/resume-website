@@ -12,7 +12,7 @@ export default function ApodCardGroup() {
             <Card>
                 <CardImg
                     alt="Card image cap"
-                    src="https://picsum.photos/318/180"
+                    src="https://apod.nasa.gov/apod/image/2206/Veil_Stocks_1080.jpg"
                     top
                     width="100%"
                 />
@@ -40,7 +40,7 @@ export default function ApodCardGroup() {
             <Card>
                 <CardImg
                     alt="Card image cap"
-                    src="https://picsum.photos/318/180"
+                    src="https://apod.nasa.gov/apod/image/2206/NGC6744_chakrabarti1024R.jpg"
                     top
                     width="100%"
                 />
@@ -68,7 +68,7 @@ export default function ApodCardGroup() {
             <Card>
                 <CardImg
                     alt="Card image cap"
-                    src="https://picsum.photos/318/180"
+                    src="https://apod.nasa.gov/apod/image/2206/V838Mon_Hubble_960.jpg"
                     top
                     width="100%"
                 />
