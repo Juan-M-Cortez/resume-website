@@ -25,3 +25,7 @@
     align-self: center;
     text-align: left;
 }
+
+#apod-id {
+    flex: 0 0;
+}

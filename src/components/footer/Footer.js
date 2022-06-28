@@ -30,8 +30,8 @@ export default function Footer() {
                 <FooterDivider />
 
                 <NavItem>
-                    <NavLink href="#">
-                        Another Link
+                    <NavLink href="https://www.nasa.gov/">
+                        Nasa
                     </NavLink>
                 </NavItem>
 

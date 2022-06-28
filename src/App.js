@@ -7,6 +7,8 @@ import TodayDate from './TodaysDate';
 import Footer from './components/footer/Footer';
 import NearEarthObjects from './components/near_earth_objects/NearEarthObjects';
 import axios from 'axios';
+import ApodCardGroup from './components/apod_card_group/ApodCardGroup';
+import ApodButton from './components/apod_button/ApodButton';
 import './App.css';
 
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
@@ -24,6 +26,10 @@ const Section = styled.section`
 const SampleDiv = styled.div`
   height: 300px;
 `;
+const PODDiv = styled.div`
+  width: 18%;
+  background-color: antiquewhite;
+`;
 
 
 
@@ -32,6 +38,7 @@ function App() {
   const [apod, setApod] = useState([]);
   // holds current img width
   const imgWidth = useRef(0);
+  const ApodDropdownHeight = useRef(0);
 
   // today => is assigned to a state, in order to cycle through and re-render a selected day
   const [todaysDate, setTodaysDate] = useState(TodayDate());
@@ -54,7 +61,12 @@ function App() {
     if (document.getElementById('img-of-day') != null) {
       imgWidth.current = document.getElementById('img-of-day').clientWidth;
     }
+    if (document.getElementById('apod-id') != null) {
+      ApodDropdownHeight.current =document.getElementById('apod-id').clientHeight;
+    }
   })
+
+  console.log('ApodDropdownHeight: ', ApodDropdownHeight.current);
 
   //-----------F(TenDayPick)-----------
   function TenDayPick(event) {
@@ -92,11 +104,7 @@ function App() {
           break;
       }
     }
-
     setTodaysDate(arrayReturn.join(''));
-    console.log('innerTarget: ', arrayReturn.join(''));
-
-    //setTodaysDate(newDate);
   }
 
   console.log(urlTodaysPic)
@@ -118,6 +126,10 @@ function App() {
             element={
               <Section className='layoutstyles__content'>
                 <PictureOfDay apodData={apod} imgSize={imgWidth.current} urlTodaysPic={urlTodaysPic} />
+                <PODDiv>
+                 <ApodButton TenDayPick={TenDayPick} ButtonHeight={ApodDropdownHeight.current}/>
+                 <ApodCardGroup />
+                </PODDiv>
               </Section>
             }
           />
