@@ -13,7 +13,7 @@ const DivNEO = styled.div`
 export default function NearEarthObjects() {
   return (
     <DivNEO>
-        <img src='https://innovationlabs.harvard.edu/wp-content/uploads/sites/5/2018/08/Coming-soon-stamp.jpg' alt='comingsoon' />
+        
         <DeleteDiv />
     </DivNEO>
   )

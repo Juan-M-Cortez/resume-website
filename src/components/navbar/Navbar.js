@@ -72,15 +72,9 @@ export default function Navbar(props) {
         <Divider />
 
         {/*🔽Drop down button start🔽*/}
-        <UncontrolledDropdown inNavbar nav>
-
-          <DropdownToggle caret nav >
-            📅Dates
-          </DropdownToggle>
-
-          <DropDown TenDayPick={TenDayPick} />
-
-        </UncontrolledDropdown>
+        <NavItem>
+          <i className='nav-icon'/>
+        </NavItem>
         {/*🔽Drop down button end🔽*/}
       </Nav>
 
