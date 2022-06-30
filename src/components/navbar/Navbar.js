@@ -73,7 +73,7 @@ export default function Navbar(props) {
 
         {/*🔽Drop down button start🔽*/}
         <NavItem>
-          <i className='nav-icon'/>
+        <i className="arrow down"></i>
         </NavItem>
         {/*🔽Drop down button end🔽*/}
       </Nav>

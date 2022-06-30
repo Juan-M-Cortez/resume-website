@@ -5,6 +5,7 @@
     max-width: 1116px;
     */
 }
+
 /*------Effects all images in the application(only good for stand alone pic of apod url)------
 img {
     height: 3.4rem;
@@ -31,35 +32,50 @@ img {
     .nav-item:nth-child(odd) {
         display: none;
     }
+
     .nav-item:nth-child(even) {
         display: none;
     }
+
     .nav-item:nth-child(6) {
         display: contents;
         justify-self: left;
     }
+
     .nav {
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap !important;
     }
+
     .nav-item:nth-child(1) {
         justify-self: center;
         display: contents;
     }
 
     @media only screen and (max-width: 524px) {
-    .nav {
-        flex-wrap: inherit !important;
-        width: 400px;
+        .nav {
+            flex-wrap: inherit !important;
+            width: 400px;
+        }
     }
-}
 }
 
 .nav-icon {
     background: url(../../img/icons8-sort-down-100.png);
-    width: 100%;
     height: 100%;
 
     /*background-color: brown; */
+}
+
+.arrow {
+    border: double white;
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 7px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
