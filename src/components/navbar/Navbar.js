@@ -9,13 +9,11 @@ export default function Navbar() {
                     <li className='navbar-li'><a>Home</a></li>
                     <li className='navbar-li'><a>Resume</a></li>
                     <li className='navbar-li'><a>Projects</a></li>
-                    <li className='navbar-li'><a>Linkedin</a></li>
-                    <li className='navbar-li'><a>GitHub</a></li>
                 </ul>
-                <ul>
-                    <li className='navbar-li'><a><i className='facebook'></i></a></li>
-                    <li></li>
-                    <li></li>
+                <ul className='navbar-icon-container'>
+                    <li><a className='icon-anchor'><i className='linkin'/></a></li>
+                    <li><a className='icon-anchor'><i className='github'/></a></li>
+                    <li><a className='icon-anchor'><i className='instagram'/></a></li>
                 </ul>
 
             </div>

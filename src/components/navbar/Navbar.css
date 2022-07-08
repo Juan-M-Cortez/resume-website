@@ -11,7 +11,8 @@
   .navbar-container {
     display: flex;
     align-items: center;
-    width: 1051px;
+    justify-content: center;
+    width: 500px;
     height: 40px;
     background-color: aquamarine;
   }
@@ -39,8 +40,30 @@
     align-items: center;
   }
 
-  .facebook {
-    content: "\f39e";
+  .linkin {
+    content: url(../../pictures/icons8-linkedin-100.png);
+    height: 50px;
   }
   
-  
+  .instagram {
+    content: url(../../pictures/icons8-instagram-100.png);
+    height: 50px;
+  }
+
+  .github {
+    content: url(../../pictures/icons8-github-squared-100.png);
+    height: 50px;
+  }
+
+  .navbar-icon-container {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    background-color:rgb(153, 193, 211);
+  }
+
+.icon-anchor {
+    display: flex;
+}
