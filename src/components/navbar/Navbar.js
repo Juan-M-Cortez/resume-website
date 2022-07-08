@@ -3,15 +3,16 @@ import './Navbar.css';
 
 export default function Navbar() {
     return (
-        <nav className="Navbar-nav">
-            <div className='Navbar-container'>
-                <a>Home</a>
-                <a>Resume</a>
-                <a>Projects</a>
-                <a>Linkedin</a>
-                <a>GitHub</a>
-                <div className='Navbar-divider'/>
-                
+        <nav className="navbar-nav">
+            <div className='navbar-container'>
+                <ul className='navbar-ul'>
+                    <li className='navbar-li'><a>Home</a></li>
+                    <li className='navbar-li'><a>Resume</a></li>
+                    <li className='navbar-li'><a>Projects</a></li>
+                    <li className='navbar-li'><a>Linkedin</a></li>
+                    <li className='navbar-li'><a>GitHub</a></li>
+                </ul>
+
 
             </div>
         </nav>
