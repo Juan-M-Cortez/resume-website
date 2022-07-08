@@ -12,7 +12,11 @@ export default function Navbar() {
                     <li className='navbar-li'><a>Linkedin</a></li>
                     <li className='navbar-li'><a>GitHub</a></li>
                 </ul>
-
+                <ul>
+                    <li className='navbar-li'><a><i className='facebook'></i></a></li>
+                    <li></li>
+                    <li></li>
+                </ul>
 
             </div>
         </nav>
