@@ -11,7 +11,7 @@
 .profile-details {
     display: flex;
     justify-content: center;
-    flex-grow: 7;
+    flex-grow: 14;
     background: transparent;
     z-index: 0;
     margin-top: 20px;
@@ -20,14 +20,13 @@
 .profile {
     display: flex;
     flex-direction: column;
-    flex-grow: 0.5;
+    flex-grow: 0.2;
     box-shadow: 4px 2px 2px 1px lightgrey;
     margin-bottom: -110px;
     background-color: #225577;
     width: 587.047px;
 }
 .img-container {
-    
 
 }
 .main_pic {
