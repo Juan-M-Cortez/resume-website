@@ -68,3 +68,8 @@
 .icon-anchor {
     display: flex;
 }
+
+.nav-links:hover {
+  color:blue;
+  cursor: pointer;
+}
