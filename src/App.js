@@ -7,12 +7,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Navbar style={{ zindex: 3 }}/>
         
         <Routes>
           <Route path="/"
           element={
-            <Home/>
+            <Home style={{ zindex: 0 }}/>
           }/>
         </Routes>
 
