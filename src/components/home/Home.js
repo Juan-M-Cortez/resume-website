@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import profilePic from '../../pictures/Profile_pic.jpg';
+import profilePic from '../../pictures/tatiana-hordiienko-weylin-enright.jpg';
 
 function Home() {
   return (

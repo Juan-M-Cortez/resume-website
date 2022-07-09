@@ -24,14 +24,16 @@
     box-shadow: 4px 2px 2px 1px lightgrey;
     margin-bottom: -110px;
     background-color: #225577;
+    width: 587.047px;
 }
 .img-container {
     
 
 }
 .main_pic {
-    box-shadow: 0px 0px 6px 3px #2e2e2e;
-    max-width: 30%;
-    height: auto;
+    box-shadow: 0px 0px 4px 2px #2e2e2e;
+    max-width: 26%;
+    height: 100%;
+    border-radius:50%;
 
 }
