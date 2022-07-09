@@ -1,0 +1,19 @@
+.home-container {
+    display: flex;
+    height: 3000px;
+    width: auto;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    width: 450px;
+    box-shadow: 2px 0px 4px lightgray;
+
+    background-color: #12232E;
+}
+
+.profile-details {
+    z-index: 0;
+}

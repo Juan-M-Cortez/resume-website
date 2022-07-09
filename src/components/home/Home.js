@@ -1,8 +1,16 @@
 import React from 'react'
+import './Home.css'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div className='home-container'>
+    <div className='profile'>
+        Profile
+    </div>
+    <div className='profile-details'>
+        Details
+    </div>
+    </div>
   )
 }
 
