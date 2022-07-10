@@ -8,7 +8,7 @@ function Home() {
     return (
         <div className='home-container'>
             <Profile />
-            <Details />
+            <Details className='Details-component'/>
         </div>
     )
 }

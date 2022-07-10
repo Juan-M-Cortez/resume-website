@@ -11,7 +11,7 @@
 .profile-details {
     display: flex;
     justify-content: center;
-    flex-grow: 14;
+    flex-grow: 1;
     background: transparent;
     z-index: 0;
     margin-top: 20px;
@@ -20,11 +20,11 @@
 .profile {
     display: flex;
     flex-direction: column;
-    flex-grow: 0.2;
+    flex-grow: 0;
     text-align: center;
     box-shadow: 4px 2px 2px 1px lightgrey;
     background-color: #225577;
-    width: 587.047px;
+    width: 400px;
 }
 
 .img-container {
@@ -33,10 +33,10 @@
 }
 
 .main_pic {
-    
     box-shadow: 0px 0px 4px 2px #2e2e2e;
     max-width: 100%;
     height: 100%;
     border-radius: 50%;
-    
+    margin-top: 20px;
 }
+

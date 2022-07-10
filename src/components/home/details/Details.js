@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './Details.css';
 
 function Details() {
     return (
-        <div className='profile-details'>
+        <div className='details'>
             Details
         </div>
     )

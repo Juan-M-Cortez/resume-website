@@ -1,8 +1,28 @@
 .profile-part1 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    height: 17rem;
+    top: 0;
+    height: 18rem;
     width: auto;
+    background-color: rgb(12, 134, 182);
+
+}
+
+h5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 1083px) {
+    .profile {
+        width: 100% !important;
+    }
 }
