@@ -3,7 +3,7 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <nav className="footer-nav">
+        <footer className="footer-nav">
             <div className='navbar-container'>
                 <ul className='navbar-ul'>
                     <li className='navbar-li'><a className='nav-links'>Home</a></li>
@@ -17,7 +17,7 @@ function Footer() {
                 </ul>
 
             </div>
-        </nav>
+        </footer>
     )
 }
 
