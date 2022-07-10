@@ -5,10 +5,14 @@ import './Profile.css';
 function Profile() {
   return (
     <div className='profile'>
-    Profile2
+      
+      <div className='profile-part1'>
+      Profile
         <div className='img-container'>
-            <img src={profilePic} alt='profile_pic' className='main_pic'/>
+          <img src={profilePic} alt='profile_pic' className='main_pic' />
         </div>
+      </div>
+
     </div>
   )
 }

@@ -21,17 +21,22 @@
     display: flex;
     flex-direction: column;
     flex-grow: 0.2;
+    text-align: center;
     box-shadow: 4px 2px 2px 1px lightgrey;
     background-color: #225577;
     width: 587.047px;
 }
+
 .img-container {
-
+    width: 10rem;
+    height: 10rem;
 }
-.main_pic {
-    box-shadow: 0px 0px 4px 2px #2e2e2e;
-    max-width: 26%;
-    height: 100%;
-    border-radius:50%;
 
+.main_pic {
+    
+    box-shadow: 0px 0px 4px 2px #2e2e2e;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
 }
