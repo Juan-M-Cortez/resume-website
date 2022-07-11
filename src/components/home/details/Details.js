@@ -1,10 +1,11 @@
+import Banner from './banner/Banner';
 import React from 'react';
 import './Details.css';
 
 function Details() {
     return (
         <div className='details'>
-            Details
+            <Banner/>
         </div>
     )
 }
