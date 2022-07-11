@@ -35,8 +35,8 @@
 
 .card {
     display: flex;
-    width: auto;
-    height: 18rem;
+    width: 18rem;
+    height: 16rem;
     background-color: #4186b7;
     box-shadow: 4px 4px 3px 3px lightgrey;
 }
