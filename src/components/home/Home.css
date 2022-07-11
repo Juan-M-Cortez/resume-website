@@ -6,16 +6,37 @@
     z-index: 0;
 }
 
-
-
 .profile {
     display: flex;
     flex-direction: column;
     flex-grow: 0;
     text-align: center;
     box-shadow: 4px 2px 2px 1px lightgrey;
-    background-color: #225577;
-    width: 400px;
+    background-color: #225577; 
+    width: 18rem;
+}
+
+@media only screen and (max-width: 1083px) {
+    .profile {
+        width: 100% !important;
+    }
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    background: transparent;
+    z-index: 0;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1083px) {
+    .details {
+        display: none;
+    }
 }
 
 .img-container {

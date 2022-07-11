@@ -4,6 +4,8 @@ import React from 'react'
 function Banner() {
   return (
     <div className='banner'>
+    Banner
+          <img src={BannerPic} alt='Banner-img' className='banner-img'/>
         
     </div>
   )
