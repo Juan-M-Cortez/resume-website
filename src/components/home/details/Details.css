@@ -40,6 +40,35 @@
     background-color: #4186b7;
     box-shadow: 4px 4px 3px 3px lightgrey;
 }
+
+.swipe-container {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 18rem;
+}
+
+.swipe-card {
+    min-width: 100%;
+    height: 100%;
+}
+
+.card1 {
+    background-color: #6200EE;
+}
+
+.card2 {
+    background-color: #018786;
+}
+
+.card3 {
+    background-color: #3700B3;
+}
+
+.card4 {
+    background-color: #03DAC6;
+}
+
 /*
 display: flex;
         flex-direction: column;
