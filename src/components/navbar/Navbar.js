@@ -1,3 +1,6 @@
+import Linkedin from '../../animation/icons8-linkedin.gif';
+import Instagram from '../../animation/icons8-instagram.gif';
+import Github from '../../animation/icons8-github.gif';
 import React from 'react';
 import './Navbar.css';
 
@@ -11,9 +14,9 @@ export default function Navbar() {
                     <li className='navbar-li'><a className='nav-links'>Projects</a></li>
                 </ul>
                 <ul className='navbar-icon-container'>
-                    <li><a className='icon-anchor'><i className='linkin'/></a></li>
-                    <li><a className='icon-anchor'><i className='github'/></a></li>
-                    <li><a className='icon-anchor'><i className='instagram'/></a></li>
+                    <li><a className='icon-anchor'><img className='linkin' src={Linkedin} alt="linkedin"/></a></li>
+                    <li><a className='icon-anchor'><img className='github' src={Github} alt="github"/></a></li>
+                    <li><a className='icon-anchor'><img className='instagram' src={Instagram} alt="instagram"/></a></li>
                 </ul>
 
             </div>
