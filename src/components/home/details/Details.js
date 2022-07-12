@@ -1,5 +1,5 @@
 import Banner from './banner/Banner';
-import Swipe from './swipe/Swipe';
+import CardSwipe from './swipe/CardSwipe';
 import Card from './card/Card';
 import React from 'react';
 import './Details.css';
@@ -16,7 +16,7 @@ function Details() {
                 <Card />
                 <Card />
             </div>
-            <Swipe />
+            <CardSwipe />
         </div>
     )
 }
