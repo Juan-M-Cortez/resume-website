@@ -38,12 +38,17 @@
 .parts-div {
     width: 250px;
     border-bottom: 1px solid;
-    border-color: white; 
-    align-self: center; 
+    border-color: white;  
 }
 
 .profile-part2>ul {
     padding-left: 0;
+}
+
+.part3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .part3-container {
