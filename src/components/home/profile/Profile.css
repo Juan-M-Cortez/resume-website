@@ -6,7 +6,16 @@
     top: 0;
     height: 18rem;
     width: auto;
-    background-image:linear-gradient(159deg,#92d2ff 0%, #2d2d3a 450%);
+    background:linear-gradient(159deg,rgba(37,37,50,.98) 0%,rgba(35,35,45,.98) 100%);
+}
+
+.part1-font-color {
+    color: white;
+    font-weight: 100;
+}
+.part1-mfont-color {
+    color: white;
+    font-weight: 200;
 }
 
 .profile-part2 {
@@ -138,5 +147,7 @@ p {
     -webkit-animation: puls 1s infinite;
     animation: puls 1s infinite;
 }
+
+
 
 

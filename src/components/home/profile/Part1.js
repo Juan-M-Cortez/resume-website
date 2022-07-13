@@ -5,17 +5,14 @@ function Part1() {
     return (
         <div className='profile-part1'>
 
-<div className='test-pulse'>hello</div>
+            <div className='test-pulse'>hello</div>
 
             <div className='img-container'>
                 <img src={profilePic} alt='profile_pic' className='main_pic' />
-                <h5>Juan Cortez</h5>
-                <p>Front-end Developer</p>
-                <p>Ui/UX Designer</p>
+                <h5 className='part1-mfont-color'>Juan Cortez</h5>
+                <p className='part1-font-color'>Front-end Developer</p>
+                <p className='part1-font-color'>Ui/UX Designer</p>
             </div>
-
-            
-
         </div>
     )
 }
