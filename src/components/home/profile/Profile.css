@@ -26,20 +26,20 @@
 
 .part2-li>h6 {
     color: white;
-    font-weight: 10;
+    font-weight: 500;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .part2-li>span {
     color: white;
-    font-weight: 400;
 }
 
-.part2-div {
+.parts-div {
     width: 250px;
     border-bottom: 1px solid;
-    border-color: white;  
+    border-color: white; 
+    align-self: center; 
 }
 
 .profile-part2>ul {
@@ -48,13 +48,46 @@
 
 .part3-container {
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     width: 100%;
-    background-color: rgb(78, 80, 78);
+    /*background-color: rgb(78, 80, 78);*/
+}
+
+.part3-svg-size {
+    display: flex;
+    align-items: center;
+    width: 100px;
 }
 
 .part3-svg {
+    width: 100px;
+    height: 100px;
 }
+
+.part3-p1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color:#ffc107;
+}
+
+.part3-p {
+    position: absolute;
+    color: white;
+    width: 101px;
+}
+
+.part3-h6 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.part3-lp {
+    color:white;
+}
+
 
 path {
     stroke: #ffc107;
@@ -87,5 +120,18 @@ p {
     margin-top: 24px;
 }
 
+.test-pulse {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    right: 1px;
+    background: #fafafc;
+    background-color: aqua;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    -webkit-animation: puls 1s infinite;
+    animation: puls 1s infinite;
+}
 
 

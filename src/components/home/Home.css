@@ -13,7 +13,7 @@
     text-align: center;
     box-shadow: 4px 2px 2px 1px lightgrey;
     background-color: #225577; 
-    min-width: 23rem;
+    min-width: 20rem;
     border-right: 1px solid;
 
 }
@@ -21,6 +21,7 @@
 @media only screen and (max-width: 1083px) {
     .profile {
         width: 100% !important;
+        border: 0;
     }
 }
 

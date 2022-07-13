@@ -16,7 +16,7 @@ function part2() {
                     <h6>Age:</h6>
                     <span>34</span>
                 </li>
-                <div className='part2-div'/>            
+                <div className='parts-div'/>            
             </ul>
         </div>
     )
