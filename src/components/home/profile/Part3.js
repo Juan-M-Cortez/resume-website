@@ -3,7 +3,9 @@ import React from 'react'
 function Part3() {
     return (
         <div className='part3'>
-            <h6 className='part3-h6'>Laguages</h6>
+            <div className='part3-divH6-container'>
+                <h6 className='part3-h6'>Laguages</h6>
+            </div>
             <div className='part3-container'>
 
                 <div className='svg-container'>
@@ -35,9 +37,9 @@ function Part3() {
                     </div>
                     <p className='part3-lp'>French</p>
                 </div>
-                
+
             </div>
-            
+
         </div>
     )
 }
