@@ -9,7 +9,7 @@ function Part3() {
                 <div className='svg-container'>
                     <div className='part3-svg-size'>
                         <svg className='part3-svg'>
-                            <path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" className='part3-path' />
+                            <path d="m 85 50 a 8 8 0 0 0 -70 0 a 8 8 0 0 0 70 -1" className='part3-path' />
                         </svg>
                         <div className='part3-p'>100%</div>
                     </div>
@@ -19,7 +19,7 @@ function Part3() {
                 <div className='svg-container'>
                     <div className='part3-svg-size'>
                         <svg className='part3-svg'>
-                            <path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" className='part3-path' />
+                            <path d="m 85 50 a 8 8 0 0 0 -70 0 a 8 8 0 0 0 70 -1" className='part3-path' />
                         </svg>
                         <div className='part3-p'>100%</div>
                     </div>
@@ -29,7 +29,7 @@ function Part3() {
                 <div className='svg-container'>
                     <div className='part3-svg-size'>
                         <svg className='part3-svg'>
-                            <path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" className='part3-path' />
+                            <path d="m 85 50 a 8 8 0 0 0 -70 0 a 8 8 0 0 0 70 -1" className='part3-path' />
                         </svg>
                         <div className='part3-p'>100%</div>
                     </div>
@@ -37,7 +37,7 @@ function Part3() {
                 </div>
                 
             </div>
-            <div className='parts-div'/> 
+            
         </div>
     )
 }
