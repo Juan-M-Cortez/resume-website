@@ -72,3 +72,9 @@
   color:rgb(103, 103, 255);
   cursor: pointer;
 }
+
+@media only screen and (max-width: 1083px) {
+  .navbar-container {
+    display:none;
+  }
+}
