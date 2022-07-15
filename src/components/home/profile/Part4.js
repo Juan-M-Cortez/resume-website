@@ -7,11 +7,10 @@ function Part4() {
 
     /* declaring a function that maps trought the language [array] */
     /* assigning index elements trought the <span> elements values */
-    
     function part4Display() {
         let list = languages.map((lang,index) => {
             return(
-            <li className="part4-li">
+            <li className="part4-li" key={`part4-li-${index}`}>
                 <span>{lang}</span>
                 <span>{percent[index]}</span>
                 <svg className='part4-svg'>
@@ -20,7 +19,6 @@ function Part4() {
             </li>
             )
         });
-
         return list.map(list => list);
     }
 
