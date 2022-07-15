@@ -182,7 +182,7 @@ path {
 
 
 h5 {
-    margin-top: 20px;
+    margin-top: -8px;
     margin-bottom: 20px;
 }
 
@@ -192,6 +192,7 @@ p {
 }
 
 .img-container {
+    margin-top: 21px;
     width: 10rem;
     height: 10rem;
 }
@@ -201,7 +202,7 @@ p {
     max-width: 100%;
     height: 100%;
     border-radius: 50%;
-    margin-top: 24px;
+    margin-top: 0;
 }
 
 .test-pulse {
@@ -217,6 +218,43 @@ p {
     -webkit-animation: puls 1s infinite;
     animation: puls 1s infinite;
 }
+
+.img_pulse-container {
+    position: relative;
+}
+
+.pulse-div {
+    position: absolute;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    top: 166px;
+    right: 20px;
+    z-index: 2;
+    -webkit-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: none;
+    }
+    100% {
+        box-shadow: 0px 0px 1px 3px #fafafc;
+    }
+}
+
+.pulse-color {
+    display: block;
+    position: relative;
+    background-color: #ffc107;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    top: -48px;
+    right: -160px;
+}
+
 
 
 

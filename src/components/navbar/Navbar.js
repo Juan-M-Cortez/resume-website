@@ -17,6 +17,9 @@ export default function Navbar() {
                     <li><a className='icon-anchor'><img className='linkin' src={Linkedin} alt="linkedin"/></a></li>
                     <li><a className='icon-anchor'><img className='github' src={Github} alt="github"/></a></li>
                     <li><a className='icon-anchor'><img className='instagram' src={Instagram} alt="instagram"/></a></li>
+                    <svg>
+                        <path d='m 85 50 a 8 8 0 0 0 -70 0 a 8 8 0 0 0 70 -1'></path>
+                    </svg>
                 </ul>
 
             </div>

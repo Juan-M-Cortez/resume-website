@@ -88,6 +88,22 @@
     color:#9b9b9b;
 }
 
+.banner-div-span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc107;
+    position: relative;
+    top: 344px;
+    right: 387px;
+    width: 206px;
+    height: 56px;
+    /* justify-content: center; */
+}
+
+.banner-span {
+    font-size: 23px;
+}
 /*
 display: flex;
         flex-direction: column;
