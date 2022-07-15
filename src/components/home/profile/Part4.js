@@ -1,35 +1,39 @@
 import React from 'react'
 
 function Part4() {
+    /* language and percent output container*/
+    const languages = ['HTML', 'CSS', 'Javascript', 'Java', 'C++', 'C#'];
+    const percent = ['90%', '80%', '95%', '80%', '80%', '90%'];
+
+    /* declaring a function that maps trought the language [array] */
+    /* assigning index elements trought the <span> elements values */
+    
+    function part4Display() {
+        let list = languages.map((lang,index) => {
+            return(
+            <li className="part4-li">
+                <span>{lang}</span>
+                <span>{percent[index]}</span>
+                <svg className='part4-svg'>
+                    <path d="M 0,0.86 L 250,0.86"></path>
+                </svg>
+            </li>
+            )
+        });
+
+        return list.map(list => list);
+    }
+
     return (
         <div className='part4'>
             <div className='part4-divider' />
+
             <div className='part4-divH6-container'>
                 <h6 className='part4-h6'>Coding</h6>
             </div>
 
             <ul className="part4-ul">
-                <li className="part4-li">
-                    <span>HTML</span>
-                    <span>95%</span>
-                    <svg className='part4-svg'>
-                        <path d="M 0,0.86 L 250,0.86"></path>
-                    </svg>
-                </li>
-                <li className="part4-li">
-                    <span>CSS</span>
-                    <span>95%</span>
-                    <svg className='part4-svg'>
-                        <path d="M 0,0.86 L 250,0.86"></path>
-                    </svg>
-                </li>
-                <li className="part4-li">
-                    <span>Javascript</span>
-                    <span>99%</span>
-                    <svg className='part4-svg'>
-                        <path d="M 0,0.86 L 250,0.86"></path>
-                    </svg>
-                </li>
+                {part4Display()}
             </ul>
 
         </div>

@@ -43,13 +43,13 @@ a {
 .linkin {
   /*content: url(../../pictures/icons8-linkedin-100.png);*/
   height: 50px;
-  border-radius: 39%;
+  border-radius: 10%;
 }
 
 .instagram {
   /*content: url(../../pictures/icons8-instagram-100.png);*/
   height: 50px;
-  border-radius: 39%;
+  border-radius: 10%;
 }
 
 .github {
