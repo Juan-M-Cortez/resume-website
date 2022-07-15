@@ -16,12 +16,12 @@ export default function Navbar() {
                     <li className='navbar-li'><a className='nav-links'>Projects</a></li>
                 </ul>
                 <ul className='navbar-icon-container'>
-                    <li><a className='icon-anchor' href="https://www.linkedin.com/in/juancort3z/"><img className='linkin' src={LinkedinPNG} alt="linkedin"/></a></li>
+                    <a className='icon-anchor' href="https://www.linkedin.com/in/juancort3z/"><img className='linkin' src={LinkedinPNG} alt="linkedin"/></a>
                     <li><a className='icon-anchor' href='https://github.com/Jud3hawk'><img className='github' src={Github} alt="github"/></a></li>
-                    <li><a className='icon-anchor' href=''><img className='instagram' src={InstagramPNG} alt="instagram"/></a></li>
-                    <svg className='navbar-icon-cover'>
+                    <li><a className='icon-anchor' href='https://www.instagram.com/jud3hawk009/?hl=en'><img className='instagram' src={InstagramPNG} alt="instagram"/></a></li>
+                    {/* <svg className='navbar-icon-cover'>
                         <path d='m 133.2 75.4 a 7 7 0 0 0 -58 0 a 7 7 0 0 0 58 -1' className="navbar-path"></path>
-                    </svg>
+                    </svg> */}
                 </ul>
 
             </div>
