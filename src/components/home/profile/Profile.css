@@ -165,12 +165,59 @@
 /*--------PART5--------*/
 .part5 {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .part5-divider {
     width: 250px;
     border-top: 1px solid white;
+}
+
+.part5-h6 {
+    color: white;
+    font-weight: 100;
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+.part5-svg-span-container {
+    display: flex;
+    width: 250px;
+    height: 30px;
+    align-items: center;
+
+}
+
+.part5-svg-span-container>svg {
+    width: 70px;
+    height: 30px;;
+}
+
+.part5-svg-span-container>span{
+    color: #9b9b9b;
+    font-weight: 100;
+}
+
+.part5-h6-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 250px;
+}
+
+/*-----------PART6----------*/
+
+.part6 {
+    margin-top: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part6-divider {
+    width: 250px;
+    border-top: 1px solid white;
+    margin-bottom: 21px;
 }
 
 path {
