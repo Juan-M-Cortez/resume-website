@@ -8,9 +8,9 @@ function Banner() {
         <span className='banner-span'>EXPLORE NOW</span>
       </div>
       <div className='banner-overlay'>
-
+        
       </div>
-      <img src={BannerPic} alt='Banner-img' className='banner-img' />
+      {/*<img src={BannerPic} alt='Banner-img' className='banner-img' />*/}
 
     </div>
   )
