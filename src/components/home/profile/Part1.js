@@ -12,7 +12,7 @@ function Part1() {
                     <div className='pulse-color'></div>
                 </div>
 
-                <h5 className='part1-mfont-color'>Cesar Aguilar</h5>
+                <h5 className='part1-mfont-color'>Juan Cortez</h5>
                 <p className='part1-font-color'>Front-end Developer</p>
                 <p className='part1-font-color'>Ui/UX Designer</p>
             </div>
