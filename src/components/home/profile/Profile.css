@@ -249,6 +249,7 @@ p {
     height: 100%;
     border-radius: 50%;
     margin-top: 0;
+    width: 100%;
 }
 
 .test-pulse {
