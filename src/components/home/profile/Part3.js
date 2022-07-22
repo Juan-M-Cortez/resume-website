@@ -15,7 +15,7 @@ function Part3() {
                         </svg>
                         <div className='part3-p'>100%</div>
                     </div>
-                    <p className='part3-lp'>Enlgish</p>
+                    <p className='part3-lp'>English</p>
                 </div>
 
                 <div className='svg-container'>
