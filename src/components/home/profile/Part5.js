@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Part5() {
-  let spanArr = ['Bootstrap, Materialize', 'Stylus, Sass, Less', 'Gulp, Webpack, Grunt', 'GIT knowledge'];
+  let spanArr = ['React.js, Bootstrap', 'Stylus, Sass, Less', 'Gulp, Webpack, Grunt', 'GIT knowledge', 'Photoshop, Illustrator'];
 
   function spanArrLog() {
     return spanArr.map((span,index) => {
