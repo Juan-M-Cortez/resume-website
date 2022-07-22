@@ -88,6 +88,15 @@
     height: 100px;
 }
 
+.path3 {
+    stroke-dasharray: 292.273, 292.273;
+    stroke-dashoffset: 239.682;
+}
+
+.negative-path {
+    stroke: black;
+}
+
 .part3-p1 {
     position: absolute;
     top: 40px;
