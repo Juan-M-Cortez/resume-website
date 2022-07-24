@@ -344,8 +344,8 @@ p {
     border-radius: 50%;
     height: 28px;
     width: 28px;
-    right: 16px;
-    top: 129px;
+    right: 32px;
+    top: 147px;
     z-index: 0;
     -webkit-animation: pulse 1s infinite;
     animation: pulse 1s infinite;
