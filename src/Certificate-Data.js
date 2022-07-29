@@ -1,4 +1,4 @@
-import Img from './pictures/google cert.PNG';
+import ImgCert from './pictures/google-cert.png';
 
 const certData = [
   {
@@ -25,7 +25,7 @@ const certData = [
     language: "Technical Support Fundamentals",
     date_completed: "04-08-2018",
     certificate_num: "",
-    img: Img,
+    img: ImgCert,
     url: "https://www.coursera.org/account/accomplishments/verify/56PUHWBK7TFK",
   }
 ]
