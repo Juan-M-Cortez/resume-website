@@ -6,15 +6,16 @@ function Card(props) {
     <div className='card'>
       {/*---------IMG PART---------*/}
       <div className='card-img-top'>
-          <img src={img ? img : url} alt='certificate-pic' className='card-img'/>
+        <img src={img ? img : url} alt='certificate-pic' className='card-img' />
       </div>
       {/*---------INFO PART---------*/}
       <div className='card-body'>
         <h5 className='card-tittle'>{tittle}</h5>
         <div className='card-content'>{content}</div>
-        <button className='card-button'>Button</button>
+        <a href={url}>
+          <button className='card-button'>Link</button>
+        </a>
       </div>
-
     </div>
   )
 }

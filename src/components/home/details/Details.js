@@ -9,8 +9,10 @@ function Details() {
 
     function CertificateLoop() {
         return certData.map((elem,index) => {
-            return <Card url={certData[index].url} tittle={certData[index].language} key={`card-${index}`} img={certData[index].img}
-            content={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.'}/>
+            return (
+                <Card url={certData[index].url} tittle={certData[index].language} key={`card-${index}`} 
+                img={certData[index].img} content={certData[index].content}/>
+            )
         })
     }
 
