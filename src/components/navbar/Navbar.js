@@ -15,8 +15,8 @@ export default function Navbar() {
             <div className='navbar-container'>
                 <ul className='navbar-ul'>
                     <li className='navbar-li'><a className='nav-links' onClick={() => navigate("/")} >Home</a></li>
-                    <li className='navbar-li'><a className='nav-links'> 🚧Coming Soon: Resume🚧</a></li>
-                    <li className='navbar-li'><a className='nav-links'> 🚧Coming Soon: Projects🚧</a></li>
+                    <li className='navbar-li'><a className='nav-links coming-soon'> Coming Soon: Resume🚧</a></li>
+                    <li className='navbar-li'><a className='nav-links coming-soon'> Coming Soon: Projects🚧</a></li>
                 </ul>
                 <ul className='navbar-icon-container'>
                     <a className='icon-anchor' href="https://www.linkedin.com/in/juancort3z/"><img className='linkin' src={LinkedinPNG} alt="linkedin"/></a>
