@@ -8,10 +8,10 @@ import './Details.css';
 function Details() {
 
     function CertificateLoop() {
-        return certData.map((elem,index) => {
+        return certData.map((elem, index) => {
             return (
-                <Card url={certData[index].url} tittle={certData[index].language} key={`card-${index}`} 
-                img={certData[index].img} content={certData[index].content} id={certData[index].id}/>
+                <Card url={certData[index].url} tittle={certData[index].language} key={`card-${index}`}
+                    img={certData[index].img} content={certData[index].content} id={certData[index].id} />
             )
         })
     }
@@ -19,6 +19,9 @@ function Details() {
     return (
         <div className='details'>
             <Banner />
+            <div className='details-div-h1'>
+                <h1 className='details-h1'>My Certificates </h1>
+            </div>
             <div className='card-container'>
                 {CertificateLoop()}
             </div>
