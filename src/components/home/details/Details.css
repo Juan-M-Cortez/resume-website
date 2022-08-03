@@ -6,7 +6,8 @@
     box-shadow: 2px 3px 4px 1px black;
     display: flex;
     height: 500px;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
     width: 85%;
 }
