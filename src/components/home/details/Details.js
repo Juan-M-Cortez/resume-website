@@ -11,7 +11,7 @@ function Details() {
         return certData.map((elem,index) => {
             return (
                 <Card url={certData[index].url} tittle={certData[index].language} key={`card-${index}`} 
-                img={certData[index].img} content={certData[index].content}/>
+                img={certData[index].img} content={certData[index].content} id={certData[index].id}/>
             )
         })
     }

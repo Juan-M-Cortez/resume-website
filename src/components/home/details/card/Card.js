@@ -1,7 +1,8 @@
 import React from 'react'
 
 function Card(props) {
-  const { tittle, content, url, img } = props;
+  const { tittle, content, url, img, id } = props;
+
   return (
     <div className='card'>
       {/*---------IMG PART---------*/}
@@ -12,7 +13,7 @@ function Card(props) {
       <div className='card-body'>
         <h5 className='card-tittle'>{tittle}</h5>
         <div className='card-content'>{content}</div>
-        <a href={url}>
+        <a href={url} className={`card-a${id}`}>
           <button className='card-button'>Link</button>
         </a>
       </div>

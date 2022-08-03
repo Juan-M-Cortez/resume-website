@@ -3,17 +3,20 @@ import LinkedinPNG from '../../pictures/Linkedin-icon.png';
 import Instagram from '../../animation/icons8-instagram.gif';
 import InstagramPNG from '../../pictures/Instagram-icon.png';
 import Github from '../../animation/icons8-github.gif';
+import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import './Navbar.css';
 
 export default function Navbar() {
+    let navigate = useNavigate();
+
     return (
         <nav className="navbar-nav">
             <div className='navbar-container'>
                 <ul className='navbar-ul'>
-                    <li className='navbar-li'><a className='nav-links'>Home</a></li>
-                    <li className='navbar-li'><a className='nav-links'>Resume🚧</a></li>
-                    <li className='navbar-li'><a className='nav-links'>Projects🚧</a></li>
+                    <li className='navbar-li'><a className='nav-links' onClick={() => navigate("/")} >Home</a></li>
+                    <li className='navbar-li'><a className='nav-links'> 🚧Coming Soon: Resume🚧</a></li>
+                    <li className='navbar-li'><a className='nav-links'> 🚧Coming Soon: Projects🚧</a></li>
                 </ul>
                 <ul className='navbar-icon-container'>
                     <a className='icon-anchor' href="https://www.linkedin.com/in/juancort3z/"><img className='linkin' src={LinkedinPNG} alt="linkedin"/></a>
