@@ -4,11 +4,13 @@ import React from 'react'
 function Banner() {
   return (
     <div className='banner'>
+      {/*
       <div className='banner-div-span'>
         <span className='banner-span'>EXPLORE NOW</span>
       </div>
+      */}
       <div className='banner-overlay'>
-        
+
       </div>
       {/*<img src={BannerPic} alt='Banner-img' className='banner-img' />*/}
 
